@@ -1,0 +1,40 @@
+<div class="container" [dir]="documentDir">
+  <header>
+    <h1>{{ 'societies.title' | translate }}</h1>
+    <div class="language-selector">
+      <select [(ngModel)]="selectedLang" (change)="switchLang(selectedLang)">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="intro">
+      <h2>{{ 'societies.subtitle' | translate }}</h2>
+      <p>{{ 'societies.description' | translate }}</p>
+    </div>
+
+    <div class="societies-grid">
+      @for (society of supportSocieties; track society.id) {
+        <div class="society-card">
+          <div class="society-logo">
+            <img [src]="'assets/logos/' + society.logo" [alt]="society.name" />
+          </div>
+          <div class="society-info">
+            <h3>{{ society.name }}</h3>
+            <p>{{ 'societies.' + society.id + '.description' | translate }}</p>
+            <a [href]="society.websiteUrl" target="_blank" class="donate-button">
+              {{ 'societies.donateButton' | translate }}
+            </a>
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="back-section">
+      <a routerLink="/" class="back-button">{{ 'societies.backToHome' | translate }}</a>
+    </div>
+  </div>
+</div>

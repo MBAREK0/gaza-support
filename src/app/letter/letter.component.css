@@ -1,4 +1,4 @@
-
+/* Base styles (from your original CSS) */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -105,7 +105,6 @@ h1, h2, h3 {
 .whatsapp { background-image: url('../../assets/icons/whatsapp.png'); }
 .linkedin { background-image: url('../../assets/icons/linkedin.png'); }
 
-
 .boycott-products {
   margin: 2rem 0;
   padding: 1.5rem;
@@ -139,4 +138,182 @@ h1, h2, h3 {
 :host-context([dir="rtl"]) .boycott-products {
   border-left: none;
   border-right: 4px solid #e74c3c;
+}
+
+/* NEW RESPONSIVE STYLES FOR SMALL PHONES */
+@media screen and (max-width: 600px) {
+  /* Adjust container padding */
+  .container {
+    padding: 10px;
+  }
+
+  /* Make header stack on small screens */
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* Adjust font sizes for headings */
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Reduce padding in the main content area */
+  .main-content {
+    padding: 15px;
+  }
+
+  /* Make supermarket items full width */
+  .supermarket-item {
+    max-width: 100%;
+  }
+
+  /* Adjust market name layout on very small screens */
+  .market-name {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  /* Make the copy button smaller but more visible */
+  .copy-btn {
+    margin-top: 5px;
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  /* Reduce padding in the letter sample */
+  .sample-letter {
+    padding: 15px;
+  }
+
+  /* Make letter content more compact */
+  .letter-content {
+    font-size: 0.9rem;
+    padding-left: 10px;
+  }
+
+  .letter-content p {
+    margin: 0.7em 0;
+  }
+
+  /* RTL support for letter content border */
+  :host-context([dir="rtl"]) .letter-content {
+    border-left: none;
+    border-right: 3px solid #ccc;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+  /* Make social icons wrap if needed */
+  .social-icons {
+    flex-wrap: wrap;
+  }
+
+  /* Reduce spacing between elements */
+  .intro, .email-addresses, .sample-letter, .share-section, .boycott-products {
+    margin-bottom: 20px;
+  }
+
+  /* Adjust boycott section padding */
+  .boycott-products {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  /* Make general text smaller */
+  body, p, .note, .supermarket-item, .market-name {
+    font-size: 0.9rem;
+  }
+
+  /* Make buttons easier to tap */
+  .copy-letter-btn {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+}
+
+/* For very small phones */
+@media screen and (max-width: 350px) {
+  /* Further size reductions */
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  body, p, .note, .supermarket-item {
+    font-size: 0.85rem;
+  }
+
+  .letter-content {
+    font-size: 0.85rem;
+  }
+
+  /* Minimize container padding */
+  .container {
+    padding: 8px;
+  }
+
+  .main-content {
+    padding: 12px;
+  }
+
+  /* Make buttons even more compact */
+  .copy-btn {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+}
+
+/* Add these styles for the new societies section */
+.societies-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.societies-section h3 {
+  color: #3498db;
+  margin-top: 0;
+}
+
+.societies-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.societies-link:hover {
+  background-color: #2980b9;
+}
+
+/* RTL support for the border */
+:host-context([dir="rtl"]) .societies-section {
+  border-left: none;
+  border-right: 4px solid #3498db;
 }

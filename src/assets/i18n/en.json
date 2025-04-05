@@ -70,5 +70,44 @@
     "technology": "Technology",
     "tools": "Tools & Hardware",
     "clothing": "Clothing & Fashion"
+  },
+
+  "societies": {
+    "title": "Support Gaza - Aid Organizations",
+    "subtitle": "Organizations Providing Aid to Gaza",
+    "description": "Below is a list of reputable organizations providing humanitarian aid to the people of Gaza. You can support their efforts by donating through their official websites.",
+    "donateButton": "Donate Now",
+    "backToHome": "Back to Main Page",
+
+    "unrwa": {
+      "description": "The United Nations Relief and Works Agency for Palestine Refugees provides essential services to Palestinian refugees including education, healthcare, relief, and social services."
+    },
+    "pcrf": {
+      "description": "PCRF provides humanitarian medical relief for injured and sick children in Gaza, the West Bank, and throughout the Middle East."
+    },
+    "map": {
+      "description": "MAP works for the health and dignity of Palestinians living under occupation and as refugees, providing immediate medical aid and developing local health capacity."
+    },
+    "anera": {
+      "description": "Anera delivers humanitarian and development aid to Palestine, Lebanon and Jordan, including emergency relief supplies and medical aid to Gaza."
+    },
+    "prcs": {
+      "description": "The Palestine Red Crescent Society provides emergency medical services, disaster response, and other humanitarian aid to Palestinians in need."
+    },
+    "unwfp": {
+      "description": "The World Food Programme delivers food assistance in emergencies and works with communities to improve nutrition and build resilience in Gaza."
+    },
+    "msf": {
+      "description": "Doctors Without Borders provides medical assistance to people affected by conflict, epidemics, disasters, or exclusion from healthcare in Gaza and worldwide."
+    },
+    "unicef": {
+      "description": "UNICEF works to protect the rights of children in Gaza by providing emergency humanitarian assistance, healthcare, nutrition, education, and protection services."
+    }
+  },
+
+  "societies-section": {
+    "title": "Support Gaza Aid Organizations",
+    "description": "View the list of humanitarian organizations working to provide aid and relief to the people of Gaza.",
+    "viewList": "View Organizations"
   }
 }

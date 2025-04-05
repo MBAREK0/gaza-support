@@ -66,6 +66,43 @@
     "technology": "Technologie",
     "tools": "Outils & Quincaillerie",
     "clothing": "Vêtements & Mode"
+  },
+  "societies": {
+    "title": "Soutenir Gaza - Organisations d'Aide",
+    "subtitle": "Organisations Fournissant de l'Aide à Gaza",
+    "description": "Ci-dessous se trouve une liste d'organisations réputées fournissant une aide humanitaire aux habitants de Gaza. Vous pouvez soutenir leurs efforts en faisant un don via leurs sites Web officiels.",
+    "donateButton": "Faire un Don",
+    "backToHome": "Retour à la Page Principale",
+
+    "unrwa": {
+      "description": "L'Office de secours et de travaux des Nations unies pour les réfugiés de Palestine fournit des services essentiels aux réfugiés palestiniens, notamment l'éducation, les soins de santé, les secours et les services sociaux."
+    },
+    "pcrf": {
+      "description": "Le PCRF fournit une aide médicale humanitaire aux enfants blessés et malades à Gaza, en Cisjordanie et dans tout le Moyen-Orient."
+    },
+    "map": {
+      "description": "MAP œuvre pour la santé et la dignité des Palestiniens vivant sous occupation et en tant que réfugiés, fournissant une aide médicale immédiate et développant les capacités sanitaires locales."
+    },
+    "anera": {
+      "description": "Anera fournit une aide humanitaire et au développement à la Palestine, au Liban et à la Jordanie, y compris des fournitures de secours d'urgence et de l'aide médicale à Gaza."
+    },
+    "prcs": {
+      "description": "Le Croissant-Rouge palestinien fournit des services médicaux d'urgence, des interventions en cas de catastrophe et d'autres aides humanitaires aux Palestiniens dans le besoin."
+    },
+    "unwfp": {
+      "description": "Le Programme alimentaire mondial fournit une assistance alimentaire dans les situations d'urgence et travaille avec les communautés pour améliorer la nutrition et renforcer la résilience à Gaza."
+    },
+    "msf": {
+      "description": "Médecins Sans Frontières fournit une assistance médicale aux personnes touchées par les conflits, les épidémies, les catastrophes ou l'exclusion des soins de santé à Gaza et dans le monde entier."
+    },
+    "unicef": {
+      "description": "L'UNICEF travaille à protéger les droits des enfants à Gaza en fournissant une assistance humanitaire d'urgence, des soins de santé, de la nutrition, de l'éducation et des services de protection."
+    }
+  },
+  "societies-section": {
+    "title": "Soutenir les Organisations d'Aide à Gaza",
+    "description": "Consultez la liste des organisations humanitaires qui travaillent pour fournir aide et secours au peuple de Gaza.",
+    "viewList": "Voir les Organisations"
   }
 
 }
