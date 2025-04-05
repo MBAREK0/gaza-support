@@ -50,7 +50,7 @@
           <div class="product-card">
             @if (product.logo) {
               <div class="product-logo">
-                <img [src]="product.logo" [alt]="product.name + ' logo'">
+                <img [src]="'../../assets/logos/products/' + product.logo" [alt]="product.name + ' logo'">
               </div>
             } @else {
               <div class="product-logo no-logo">

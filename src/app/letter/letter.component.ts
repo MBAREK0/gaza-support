@@ -102,4 +102,19 @@ export class LetterComponent {
         return '#';
     }
   }
+  copyAllEmails() {
+    // Filter out only items with email addresses (not links)
+    const emailContacts = this.supermarkets
+      .filter(market => market.type !== 'link')
+      .map(market => market.contact)
+      .join(', ');
+
+    navigator.clipboard.writeText(emailContacts)
+      .then(() => {
+        alert(this.translate.instant('emails.all_copied'));
+      })
+      .catch(err => {
+        console.error('Could not copy emails: ', err);
+      });
+  }
 }

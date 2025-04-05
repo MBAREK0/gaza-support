@@ -11,9 +11,12 @@
   },
 
   "emails": {
-    "title": "Voici les e-mails de ces supermarchés – Remarque : Remplacez [at] par @ – c'est une mesure anti-spam.",
-    "note": "Remarque : Remplacez [at] par @ – c'est une mesure anti-spam. Ou cliquez sur copier.",
-    "from_here": "à partir d'ici"
+    "emails.title": "Voici les e-mails de ces supermarchés - Vous pouvez utiliser le bouton 'Copier tous les e-mails' pour saisir tous les e-mails à la fois.",
+    "emails.note": "Remarque : Pour coller dans Gmail, utilisez Ctrl+V après la copie.",
+    "from_here": "à partir d'ici",
+    "copyAll": "Copier tous les e-mails",
+    "copyAllTip": "Cliquez pour copier toutes les adresses e-mail à coller dans Gmail",
+    "all_copied": "Toutes les adresses e-mail ont été copiées dans le presse-papiers !"
   },
 
   "letter": {

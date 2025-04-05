@@ -11,9 +11,12 @@
   },
 
   "emails": {
-    "title": "Here are emails for these supermarkets – Note: Replace [at] with @ – this is an anti-spam measure.",
-    "note": "Note: Replace [at] with @ – this is an anti-spam measure Or click copy.",
-    "from_here" : "from here"
+    "title": "Here are emails for these supermarkets – You can use 'Copy All' button to grab all emails at once.",
+    "note": "Note: To paste in Gmail, use Ctrl+V after copying.",
+    "from_here" : "from here",
+    "copyAll": "Copy All Emails",
+    "copyAllTip": "Click to copy all email addresses for pasting into Gmail",
+    "all_copied": "All email addresses copied to clipboard!"
   },
 
 

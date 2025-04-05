@@ -29,7 +29,7 @@
     <div class="boycott-products">
       <h3>{{ 'boycott-section.title' | translate }}</h3>
       <p>{{ 'boycott-section.description' | translate }}</p>
-      <a routerLink="/boycott-products" target="_blank" class="boycott-link">
+      <a routerLink="/boycott-products" class="boycott-link">
         {{ 'boycott-section.viewProducts' | translate }}
       </a>
     </div>
@@ -37,6 +37,13 @@
     <div class="email-addresses">
       <h3>{{ 'emails.title' | translate }}</h3>
       <p class="note">{{ 'emails.note' | translate }}</p>
+
+      <div class="copy-all-emails">
+        <button class="copy-all-btn" (click)="copyAllEmails()">
+          {{ 'emails.copyAll' | translate }}
+        </button>
+        <p class="copy-tip">{{ 'emails.copyAllTip' | translate }}</p>
+      </div>
 
       <div class="supermarket-list">
         @for (market of supermarkets; track market.name) {

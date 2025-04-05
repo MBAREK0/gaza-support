@@ -2,49 +2,43 @@ export const societies = [
   {
     id: 'unrwa',
     name: 'UNRWA',
-    logo: 'unrwa-logo.png',
+    logo: 'UNRWA.jpeg',
     websiteUrl: 'https://www.unrwa.org/donate'
   },
   {
     id: 'pcrf',
     name: 'Palestine Children\'s Relief Fund',
-    logo: 'pcrf-logo.png',
+    logo: 'pcrf.jpeg',
     websiteUrl: 'https://www.pcrf.net/donate'
   },
   {
     id: 'map',
     name: 'Medical Aid for Palestinians',
-    logo: 'map-logo.png',
+    logo: 'map.jpeg',
     websiteUrl: 'https://www.map.org.uk/donate/donate'
-  },
-  {
-    id: 'anera',
-    name: 'American Near East Refugee Aid',
-    logo: 'anera-logo.png',
-    websiteUrl: 'https://www.anera.org/donate/'
   },
   {
     id: 'prcs',
     name: 'Palestine Red Crescent Society',
-    logo: 'prcs-logo.png',
+    logo: 'prcs.png',
     websiteUrl: 'https://www.palestinercs.org/en/donation'
   },
   {
     id: 'unwfp',
     name: 'UN World Food Programme',
-    logo: 'wfp-logo.png',
+    logo: 'unwfp.jpg',
     websiteUrl: 'https://donatenow.wfp.org/gaza-emergency/~my-donation'
   },
   {
     id: 'msf',
     name: 'Médecins Sans Frontières (Doctors Without Borders)',
-    logo: 'msf-logo.png',
+    logo: 'msf.png',
     websiteUrl: 'https://www.doctorswithoutborders.org/donate'
   },
   {
     id: 'unicef',
     name: 'UNICEF',
-    logo: 'unicef-logo.png',
-    websiteUrl: 'https://help.unicef.org/gaza-children'
+    logo: 'unicef.png',
+    websiteUrl: 'https://help.unicef.org/donate-to-children?language=en'
   }
 ];

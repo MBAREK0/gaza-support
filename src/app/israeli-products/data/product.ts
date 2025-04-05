@@ -13,7 +13,7 @@ export const products: Product[] = [
     name: "Sabra",
     category: "food",
     alternativeBrands: ["Local hummus brands", "Homemade hummus"],
-    logo: "../../assets/logos/sabra.jpg",
+    logo: "sabra.png",
     description: "Hummus, dips, and spreads"
   },
   {
@@ -21,7 +21,7 @@ export const products: Product[] = [
     name: "SodaStream",
     category: "beverages",
     alternativeBrands: ["Regular bottled sparkling water", "Manual soda makers"],
-    logo: "../../assets/logos/sodastream.jpg",
+    logo: "sodastream.avif",
     description: "Home carbonation products"
   },
   {
@@ -29,7 +29,7 @@ export const products: Product[] = [
     name: "Ahava",
     category: "cosmetics",
     alternativeBrands: ["Local organic skincare", "Non-Israeli international brands"],
-    logo: "../../assets/logos/ahava.jpg",
+    logo: "ahava.png",
     description: "Dead Sea cosmetics and skincare"
   },
   {
@@ -37,7 +37,7 @@ export const products: Product[] = [
     name: "Teva Pharmaceutical",
     category: "pharmaceuticals",
     alternativeBrands: ["Generic alternatives (consult doctor)", "Local pharmaceutical companies"],
-    logo: "../../assets/logos/teva.jpg",
+    logo: "teva.png",
     description: "Generic and specialty medications"
   },
   {
@@ -52,7 +52,7 @@ export const products: Product[] = [
     name: "Strauss Group",
     category: "food",
     alternativeBrands: ["Local dairy and coffee brands"],
-    logo: "../../assets/logos/strauss.jpg",
+    logo: "Strauss.png",
     description: "Dairy products, coffee, snacks"
   },
   {
@@ -60,7 +60,7 @@ export const products: Product[] = [
     name: "Wix",
     category: "technology",
     alternativeBrands: ["WordPress", "Shopify", "Squarespace"],
-    logo: "../../assets/logos/wix.jpg",
+    logo: "wix.png",
     description: "Website building platform"
   },
   {
@@ -68,7 +68,7 @@ export const products: Product[] = [
     name: "Stanley Black & Decker",
     category: "tools",
     alternativeBrands: ["Bosch", "Makita", "DeWalt"],
-    logo: "../../assets/logos/stanley.jpg",
+    logo: "stanley_black_decker_israel_logo.jpeg",
     description: "Tools and home improvement products with Israeli subsidiaries"
   },
   {
@@ -76,7 +76,7 @@ export const products: Product[] = [
     name: "Puma",
     category: "clothing",
     alternativeBrands: ["Adidas", "Nike", "Local sports brands"],
-    logo: "../../assets/logos/puma.jpg",
+    logo: "Puma-logo.png",
     description: "Sportswear sponsor of the Israel Football Association"
   },
   {
@@ -84,7 +84,7 @@ export const products: Product[] = [
     name: "HP (Hewlett Packard)",
     category: "technology",
     alternativeBrands: ["Lenovo", "Dell", "Acer"],
-    logo: "../../assets/logos/hp.jpg",
+    logo: "hp.png",
     description: "Computers and technology services to Israeli government"
   }
 ];

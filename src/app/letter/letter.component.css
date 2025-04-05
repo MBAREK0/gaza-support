@@ -317,3 +317,45 @@ h1, h2, h3 {
   border-left: none;
   border-right: 4px solid #3498db;
 }
+.copy-all-emails {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.copy-all-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.copy-all-btn:hover {
+  background-color: #45a049;
+}
+
+.copy-tip {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* RTL support for copy all button container */
+:host-context([dir="rtl"]) .copy-all-emails {
+  text-align: left;
+}
+
+/* Mobile responsiveness for the copy all button */
+@media screen and (max-width: 600px) {
+  .copy-all-emails {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .copy-all-btn {
+    width: 100%;
+    padding: 10px;
+  }
+}
