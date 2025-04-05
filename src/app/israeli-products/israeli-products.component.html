@@ -1,0 +1,89 @@
+<div class="container" [dir]="documentDir">
+  <header>
+    <h1>{{ 'boycott.pageTitle' | translate }}</h1>
+    <div class="language-selector">
+      <select [(ngModel)]="selectedLang" (change)="switchLang(selectedLang)">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="intro">
+      <h2>{{ 'boycott.subtitle' | translate }}</h2>
+      <p>{{ 'boycott.explanation' | translate }}</p>
+      <div class="disclaimer">
+        <p>{{ 'boycott.disclaimer' | translate }}</p>
+      </div>
+    </div>
+
+    <div class="filters">
+      <div class="search-box">
+        <input
+          type="text"
+          [(ngModel)]="searchTerm"
+          (input)="filterProducts()"
+          placeholder="{{ 'boycott.searchPlaceholder' | translate }}"
+        >
+      </div>
+      <div class="category-filter">
+        <label for="category-select">{{ 'boycott.filterByCategory' | translate }}:</label>
+        <select
+          id="category-select"
+          [(ngModel)]="selectedCategory"
+          (change)="filterProducts()"
+        >
+          @for (category of categories; track category) {
+            <option [value]="category">
+              {{ 'categories.' + category | translate }}
+            </option>
+          }
+        </select>
+      </div>
+    </div>
+
+    <div class="products-grid">
+      @if (filteredProducts.length > 0) {
+        @for (product of filteredProducts; track product.id) {
+          <div class="product-card">
+            @if (product.logo) {
+              <div class="product-logo">
+                <img [src]="product.logo" [alt]="product.name + ' logo'">
+              </div>
+            } @else {
+              <div class="product-logo no-logo">
+                <span>{{ product.name.charAt(0) }}</span>
+              </div>
+            }
+            <div class="product-info">
+              <h3>{{ product.name }}</h3>
+              <p class="category-tag">{{ 'categories.' + product.category | translate }}</p>
+              <p class="description">{{ product.description }}</p>
+
+              @if (product.alternativeBrands && product.alternativeBrands.length > 0) {
+                <div class="alternatives">
+                  <h4>{{ 'boycott.alternatives' | translate }}:</h4>
+                  <ul>
+                    @for (alt of product.alternativeBrands; track alt) {
+                      <li>{{ alt }}</li>
+                    }
+                  </ul>
+                </div>
+              }
+            </div>
+          </div>
+        }
+      } @else {
+        <div class="no-results">
+          <p>{{ 'boycott.noResults' | translate }}</p>
+        </div>
+      }
+    </div>
+
+    <div class="back-link">
+      <a routerLink="/">{{ 'boycott.backToHome' | translate }}</a>
+    </div>
+  </div>
+</div>

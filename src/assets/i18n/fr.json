@@ -1,0 +1,71 @@
+{
+  "title": "Campagne de soutien à Gaza",
+  "copy": "Copier",
+  "copied": "Copié dans le presse-papiers !",
+
+  "action": {
+    "title": "Écrivez aux supermarchés pour leur demander de ne plus stocker de produits israéliens",
+    "description": "Boycotter les produits israéliens est un moyen important par lequel les individus peuvent exprimer leur soutien à la Palestine et leur opposition à l'apartheid israélien contre les Palestiniens. Ce qui est encore plus fort, c'est quand les gens agissent collectivement et poussent pour retirer les produits israéliens des rayons des magasins au Maroc jusqu'à ce qu'Israël mette fin à son occupation de la Palestine.",
+    "motivation": "En tant que citoyens préoccupés par les droits humains et le droit international, nous croyons que les détaillants ont l'opportunité de se tenir du bon côté de l'histoire, de s'opposer à l'apartheid et de cesser de stocker des produits israéliens jusqu'à ce qu'Israël mette fin à son occupation des terres palestiniennes, cesse de commettre des crimes de guerre, accorde des droits égaux à tous ses citoyens et se conforme pleinement à ses obligations en vertu du droit international.",
+    "sample": "Vous trouverez ci-dessous un exemple de lettre que nous vous demandons d'envoyer à la fois à vos supermarchés locaux lorsque vous voyez des produits israéliens, et aux sièges sociaux des principaux supermarchés marocains (même s'il est toujours préférable d'écrire avec vos propres mots)."
+  },
+
+  "emails": {
+    "title": "Voici les e-mails de ces supermarchés – Remarque : Remplacez [at] par @ – c'est une mesure anti-spam.",
+    "note": "Remarque : Remplacez [at] par @ – c'est une mesure anti-spam. Ou cliquez sur copier.",
+    "from_here": "à partir d'ici"
+  },
+
+  "letter": {
+    "title": "EXEMPLE DE LETTRE",
+    "copyButton": "Copier le modèle de lettre",
+    "copied": "Modèle de lettre copié dans le presse-papiers !",
+    "greeting": "Cher/Chère Directeur/Directrice,",
+    "paragraph1": "Je vous écris concernant la présence de produits israéliens dans votre/vos point(s) de vente. En tant que client régulier de votre magasin, je voudrais vous demander de retirer ces produits israéliens, car ils proviennent d'un pays qui poursuit une brutale occupation militaire des territoires palestiniens occupés et, selon Human Rights Watch, commet les doubles crimes contre l'humanité d'apartheid et de persécution du peuple palestinien. Les revenus de ces produits contribuent à financer des violations régulières des droits humains, des violations du droit international, des crimes de guerre et un système vicieux de lois d'apartheid raciste qui visent à maintenir les Palestiniens subjugués.",
+    "paragraph2": "Actuellement, Israël est à nouveau engagé dans une offensive généralisée et dévastatrice contre le peuple de Palestine.",
+    "paragraph3": "Au moment de la rédaction de cette lettre, plus de 13 000 personnes ont été tuées dans l'assaut en cours d'Israël contre le peuple de Gaza. Parmi elles figurent près de 6 000 enfants et environ 3 500 femmes.",
+    "paragraph4": "D'innombrables milliers d'autres ont été blessés, des hôpitaux déjà débordés ont été bombardés et attaqués, des bureaux de médias, des journalistes, des médecins, des écoles, des universités, des églises, des mosquées et des abris de l'ONU ont tous été attaqués, et la moitié de toutes les maisons de la région ont été détruites – tous des crimes de guerre en violation du droit international. Plus d'un million et demi de personnes ont été déplacées.",
+    "paragraph5": "Une telle brutalité n'est pas nouvelle – par exemple, en avril et mai 2018, les forces d'occupation israéliennes ont abattu plus de 100 manifestants non armés à Gaza. En 2014, les Palestiniens ont subi la troisième attaque massive des forces d'occupation israéliennes en six ans. Selon l'ONU et Amnesty, cette attaque a fait plus de 2 200 morts palestiniens, environ 70 % d'entre eux étant des civils, dont plus de 500 enfants. Des milliers d'autres ont été mutilés ou blessés et les infrastructures civiles, notamment les hôpitaux et les maisons, ont été attaquées et détruites, laissant plus de 100 000 personnes toujours déplacées et sans abri. Amnesty affirme qu'Israël a commis des 'crimes de guerre', et malgré un accord de cessez-le-feu, Israël continue d'attaquer fréquemment la région. Le peuple palestinien souffre depuis longtemps en raison des politiques d'apartheid d'Israël.",
+    "paragraph6": "Israël occupe militairement la Cisjordanie palestinienne, Gaza, Jérusalem-Est et le Golan syrien depuis 1967. Pendant ce temps, il a commis de nombreux crimes graves contre le peuple palestinien, y compris la construction continue de colonies illégales, ce qui constitue une 'violation flagrante de la quatrième Convention de Genève' selon la résolution 465 du Conseil de sécurité de l'ONU. Depuis 2006, Israël a imposé un siège illégal et inhumain sur la bande de Gaza, où vivent deux millions de Palestiniens.",
+    "paragraph7": "La cruauté de l'État israélien est telle que Dov Weissglas, conseiller principal du premier ministre israélien en 2006, a plaisanté à propos du siège : 'C'est comme un rendez-vous avec un diététicien. Les Palestiniens vont beaucoup maigrir, mais ne mourront pas.' À cette fin, selon le Guardian, 'l'armée israélienne a fait des calculs précis des besoins caloriques quotidiens de Gaza' afin de maintenir les gens affamés mais pas mal nourris.",
+    "paragraph8": "Quelque 23 000 Palestiniens, pour la plupart des civils et dont plus de 7 600 enfants, ont été tués depuis septembre 2000 par les forces israéliennes. Israël a détruit des milliers de maisons palestiniennes et d'infrastructures civiles cruciales, y compris des centrales électriques, des routes, des ponts, des réseaux d'égouts et de téléphonie. Les restrictions imposées aux mouvements des Palestiniens et des biens palestiniens ont rendu impossible une vie normale.",
+    "paragraph9": "Human Rights Watch n'est pas la seule organisation de défense des droits humains à affirmer qu'Israël commet le crime d'apartheid. Amnesty International déclare que 'l'apartheid d'Israël contre les Palestiniens [est] un système cruel de domination et un crime contre l'humanité.' B'Tselem, le principal groupe israélien de défense des droits humains, décrit la situation comme étant 'un régime d'apartheid... qui favorise la suprématie des Juifs sur les Palestiniens.'",
+    "paragraph10": "Un appel international au boycott des produits israéliens a été lancé par plus de 200 organisations de la société civile palestinienne, syndicats et organisations ecclésiastiques en 2005. Boycotter les produits israéliens offre une tactique non violente pour aider à mettre fin à l'apartheid israélien, comme ce fut le cas pour l'apartheid sud-africain auparavant. C'est un moyen à la fois moral et efficace pour contribuer à une solution juste et pacifique au conflit israélo-palestinien.",
+    "paragraph11": "En ce qui vous concerne, en continuant à stocker des produits israéliens, vos magasins contribuent malheureusement à financer cette tragédie en cours. Il existe un argument moral et matériel clair pour cesser de stocker des produits en provenance d'Israël – ils aident à financer l'oppression et le meurtre des Palestiniens et le vol de leurs terres.",
+    "paragraph12": "2024 marquera le 40e anniversaire de la grève anti-apartheid chez Dunnes Stores, une action qui a résonné jusqu'à la cellule de Nelson Mandela sur l'île de Robben. Il convient de noter que de nombreuses personnes impliquées dans cette grève, notamment Mary Manning, Karen Gearon, Liz Deasy, feu Brendan Archbold et la direction du syndicat Mandate (alors IDATU), ont exprimé leur soutien au boycott des produits israéliens; Par conséquent, je pense que près de 40 ans plus tard, il reste immoral de stocker des produits qui contribuent à financer l'apartheid. Je vous demande donc de vous tenir du bon côté de l'histoire, de vous opposer à l'apartheid et de cesser de stocker des produits israéliens jusqu'à ce qu'Israël mette fin à son occupation des terres palestiniennes, accorde des droits égaux à tous ses citoyens et se conforme pleinement à ses obligations en vertu du droit international.",
+    "closing": "Bien cordialement,"
+  },
+
+  "share": {
+    "title": "Partagez ceci !"
+  },
+
+  "boycott-section": {
+    "title": "Produits Israéliens à Boycotter",
+    "description": "Vous pouvez trouver ici une liste des produits et marques israéliens à boycotter dans vos supermarchés locaux.",
+    "viewProducts": "Voir la liste de boycott"
+  },
+
+  "boycott": {
+    "pageTitle": "Produits Israéliens à Boycotter",
+    "subtitle": "Produits et Marques à Éviter",
+    "explanation": "Cette page liste les entreprises et produits israéliens que vous pourriez vouloir boycotter. Elle propose également des marques et produits alternatifs que vous pouvez utiliser à la place.",
+    "disclaimer": "Cette liste est uniquement informative. La décision de boycotter est un choix personnel. Vérifiez toujours les informations concernant les entreprises et leurs affiliations auprès de plusieurs sources.",
+    "searchPlaceholder": "Rechercher des produits...",
+    "filterByCategory": "Filtrer par catégorie",
+    "alternatives": "Alternatives",
+    "noResults": "Aucun produit ne correspond à vos critères de recherche.",
+    "backToHome": "Retour à la Page Principale"
+  },
+  "categories": {
+    "all": "Toutes les Catégories",
+    "food": "Alimentation & Boissons",
+    "beverages": "Boissons",
+    "cosmetics": "Cosmétiques & Beauté",
+    "pharmaceuticals": "Produits Pharmaceutiques",
+    "technology": "Technologie",
+    "tools": "Outils & Quincaillerie",
+    "clothing": "Vêtements & Mode"
+  }
+
+}

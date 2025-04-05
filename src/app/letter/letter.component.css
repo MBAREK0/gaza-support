@@ -1,0 +1,142 @@
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+h1, h2, h3 {
+  color: #333;
+}
+.language-selector select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.main-content {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+.intro, .email-addresses, .sample-letter, .share-section {
+  margin-bottom: 30px;
+}
+.note {
+  font-style: italic;
+  color: #666;
+}
+.supermarket-list {
+  margin-top: 15px;
+}
+.supermarket-item {
+  max-width: 500px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.market-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.copy-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.copy-btn:hover {
+  background-color: #45a049;
+}
+.sample-letter {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.letter-content {
+  margin-bottom: 20px;
+  border-left: 3px solid #ccc;
+  padding-left: 15px;
+}
+.copy-letter-btn {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+.copy-letter-btn:hover {
+  background-color: #0b7dda;
+}
+.share-section {
+  text-align: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-icons a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.facebook { background-image: url('../../assets/icons/facebook.png'); }
+.twitter { background-image: url('../../assets/icons/twitter.png'); }
+.whatsapp { background-image: url('../../assets/icons/whatsapp.png'); }
+.linkedin { background-image: url('../../assets/icons/linkedin.png'); }
+
+
+.boycott-products {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border-left: 4px solid #e74c3c;
+}
+
+.boycott-products h3 {
+  color: #e74c3c;
+  margin-top: 0;
+}
+
+.boycott-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boycott-link:hover {
+  background-color: #c0392b;
+}
+
+/* RTL support for the border */
+:host-context([dir="rtl"]) .boycott-products {
+  border-left: none;
+  border-right: 4px solid #e74c3c;
+}

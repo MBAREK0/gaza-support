@@ -1,0 +1,91 @@
+<div class="container" [dir]="documentDir">
+  <header>
+    <h1>{{ 'title' | translate }}</h1>
+    <div class="language-selector">
+      <select [(ngModel)]="selectedLang" (change)="switchLang(selectedLang)">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="intro">
+      <h2>{{ 'action.title' | translate }}</h2>
+      <p>{{ 'action.description' | translate }}</p>
+      <p>{{ 'action.motivation' | translate }}</p>
+      <p>{{ 'action.sample' | translate }}</p>
+    </div>
+
+    <div class="boycott-products">
+      <h3>{{ 'boycott-section.title' | translate }}</h3>
+      <p>{{ 'boycott-section.description' | translate }}</p>
+      <a routerLink="/boycott-products" target="_blank" class="boycott-link">
+        {{ 'boycott-section.viewProducts' | translate }}
+      </a>
+    </div>
+
+    <div class="email-addresses">
+      <h3>{{ 'emails.title' | translate }}</h3>
+      <p class="note">{{ 'emails.note' | translate }}</p>
+
+      <div class="supermarket-list">
+        @for (market of supermarkets; track market.name) {
+          <div class="supermarket-item">
+            <div class="market-name">
+              <strong>{{ market.name | translate }}</strong>
+              @if (market.type !== 'link') {
+                <button class="copy-btn" (click)="copyText(market.contact)">
+                  {{ 'copy' | translate }}
+                </button>
+              }
+            </div>
+            @if (market.type === 'link') {
+              <a [href]="market.contact" target="_blank">
+                {{ 'emails.from_here' | translate }}
+              </a>
+            } @else {
+              <span>
+                {{ market.contact | translate }}
+              </span>
+            }
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="sample-letter">
+      <h3>{{ 'letter.title' | translate }}</h3>
+      <div class="letter-content">
+        <p>{{ 'letter.greeting' | translate }}</p>
+        <p>{{ 'letter.paragraph1' | translate }}</p>
+        <p>{{ 'letter.paragraph2' | translate }}</p>
+        <p>{{ 'letter.paragraph3' | translate }}</p>
+        <p>{{ 'letter.paragraph4' | translate }}</p>
+        <p>{{ 'letter.paragraph5' | translate }}</p>
+        <p>{{ 'letter.paragraph6' | translate }}</p>
+        <p>{{ 'letter.paragraph7' | translate }}</p>
+        <p>{{ 'letter.paragraph8' | translate }}</p>
+        <p>{{ 'letter.paragraph9' | translate }}</p>
+        <p>{{ 'letter.paragraph10' | translate }}</p>
+        <p>{{ 'letter.paragraph11' | translate }}</p>
+        <p>{{ 'letter.paragraph12' | translate }}</p>
+        <p>{{ 'letter.closing' | translate }}</p>
+      </div>
+      <button class="copy-letter-btn" (click)="copyLetterTemplate()">
+        {{ 'letter.copyButton' | translate }}
+      </button>
+    </div>
+
+    <div class="share-section">
+      <h3>{{ 'share.title' | translate }}</h3>
+      <div class="social-icons">
+        <a [href]="getShareLink('facebook')" target="_blank" class="facebook">Facebook</a>
+        <a [href]="getShareLink('twitter')" target="_blank" class="twitter">Twitter</a>
+        <a [href]="getShareLink('whatsapp')" target="_blank" class="whatsapp">WhatsApp</a>
+        <a [href]="getShareLink('linkedin')" target="_blank" class="linkedin">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</div>

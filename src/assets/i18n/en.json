@@ -1,0 +1,74 @@
+{
+  "title": "Gaza Support Campaign",
+  "copy": "Copy",
+  "copied": "Copied to clipboard!",
+
+  "action": {
+    "title": "Write to supermarkets asking them to stop stocking Israeli products",
+    "description": "Boycotting Israeli products is one important way individuals can express their support for Palestine and opposition to Israeli apartheid against the Palestinians. What is even stronger is when people act collectively, and push for removing Israeli goods from the shelves of stores in Morocco until Israel ends its occupation of Palestine.",
+    "motivation": "As citizens concerned about human rights and international law, we believe that retailers have an opportunity to stand on the right side of history, to oppose apartheid, and to cease stocking Israeli goods until Israel ends its occupation of Palestinian lands, stops committing war crimes, grants equal rights to all its citizens and complies fully with its obligations under international law.",
+    "sample": "Below you will find a sample letter which we would ask you to send to both your local supermarkets when you see Israeli goods, and to the head offices of the major Moroccan supermarkets (though it's always better to write in your own words)."
+  },
+
+  "emails": {
+    "title": "Here are emails for these supermarkets – Note: Replace [at] with @ – this is an anti-spam measure.",
+    "note": "Note: Replace [at] with @ – this is an anti-spam measure Or click copy.",
+    "from_here" : "from here"
+  },
+
+
+
+  "letter": {
+    "title": "SAMPLE LETTER",
+    "copyButton": "Copy Letter Template",
+    "copied": "Letter template copied to clipboard!",
+    "greeting": "Dear Manager,",
+    "paragraph1": "I am writing to you concerning the presence of Israeli products in your outlet(s). As a regular shopper in your store, I would like to ask you to remove these Israeli products, as they come from a country which continues a brutal military occupation of the occupied Palestinian territories and, in the words of Human Rights Watch, is committing the dual crimes against humanity of Apartheid and Persecution of the Palestinian People. Revenues from these products help fund regular human rights abuses, violations of international law, war crimes and a vicious system of racist apartheid laws that aim to keep Palestinians subjugated.",
+    "paragraph2": "At present, Israel is yet again engaged in a widespread and devastating offensive on the people of Palestine.",
+    "paragraph3": "At the time of writing, more than 13,000 people have been killed in Israel’s ongoing assault on the people of Gaza. They include almost 6,000 children and some 3500 women.",
+    "paragraph4": "Uncountable thousands more have been wounded, already overflowing hospitals have been bombed and attacked, media offices, journalists, medics, schools, universities, churches, mosques and UN shelters have all been attacked, and half of all home in the area have been destroyed – all war crimes in violation of international law. Over a million and a half people have been displaced.",
+    "paragraph5": "Such brutality is nothing new – for example, in April and May 2018, Israeli occupation forces shot dead over 100 unarmed protesters in Gaza. In 2014 Palestinians endured the third massive attack by Israeli occupation forces in six years. According to the UN and Amnesty this attack left over 2,200 Palestinian people dead, around 70% of them civilians including over 500 children. Thousands more were maimed or injured and civilian infrastructure including hospitals and homes were attacked and destroyed, leaving over 100,000 people still displaced and homeless. Amnesty says Israel committed “war crimes”, despite a ceasefire agreement Israel continues to attack the area frequently. The Palestinian people have long-suffered as a result of Israel’s apartheid policies.",
+    "paragraph6": "Israel has militarily occupied the Palestinian West Bank, Gaza, East Jerusalem and the Syrian Golan Heights since 1967. In that time it has committed numerous serious crimes against the Palestinian people, including the ongoing building of illegal settlements which is a “flagrant violation of the Fourth Geneva Convention” according to UN Security Council Resolution 465. Since 2006, Israel has imposed an illegal and inhuman siege on the Gaza strip, where two million Palestinians live.",
+    "paragraph7": "The callousness of the Israeli state is such that Dov Weissglas, a senior advisor to the Israeli prime minister in 2006 joked about the siege: “It’s like an appointment with a dietician. The Palestinians will get a lot thinner, but won’t die.” To this end, according to the Guardian, “the Israeli military made precise calculations of Gaza’s daily calorie needs” so it could keep people hungry but not malnourished.",
+    "paragraph8": "Some 23,000 Palestinians, most of them civilians and including over 7,600 children, have been killed since September 2000 by Israeli forces. Israel has destroyed thousands of Palestinian homes and crucial civilian infrastructure, including power plants, roads, bridges, sewage and telephone networks. Restrictions imposed on the movements of Palestinians and Palestinian goods have made normal life impossible.",
+    "paragraph9": " Human Rights Watch is not the only human rights organisation to state that Israel is committing the crime of Apartheid. Amnesty International says that “Israel’s apartheid against Palestinians [is] a cruel system of domination and a crime against humanity.' B’Tselem, the leading Israeli human rights group, describes the situation as being “an apartheid regime … which promotes the supremacy of Jews over Palestinians.'",
+    "paragraph10" : "An international call for a boycott of Israeli goods was issued by over 200 by Palestinian civil society, trade union and church organisations in 2005. Boycotting Israeli goods offers non-violent tactic towards helping achieve an end to Israeli apartheid, as with South African apartheid before it. It is both a moral and effective means to help achieve a just and peaceful solution to the Israeli-Palestinian conflict.",
+    "paragraph11" : "For your part, by continuing to stock Israeli goods, your stores are sadly helping to fund this ongoing tragedy. There is a clear moral and material case to cease stocking goods from Israel – they help fund the oppression and murder of Palestinians and the theft of their lands.",
+    "paragraph12" : "2024 will mark the 40th anniversary of the anti-apartheid strike at Dunnes Stores, an action that resounded all the way to Nelson Mandela’s cell on Robben Island. It is worth noting that many of those involved in that strike, including Mary Manning, Karen Gearon, Liz Deasy, the late Brendan Archbold and the leadership of Mandate (then IDATU) trade union have voiced support for  boycott of Israeli goods; Therefore, I think that almost 40 years on, it remains immoral to stock products that help to fund apartheid.  Therefore, I am asking you to please stand on the right side of history, to stand against apartheid, and to cease stocking Israeli goods until Israel ends it occupation of Palestinian lands, grants equal rights to all its citizens and complies fully with its obligations under international law.",
+    "closing": "Yours sincerely,"
+  },
+
+  "share": {
+    "title": "Share this!"
+  },
+
+
+  "boycott-section": {
+    "title": "Israeli Products to Boycott",
+    "description": "Here you can find a list of Israeli products and brands to boycott in your local supermarkets.",
+    "viewProducts": "View Boycott List"
+  },
+
+
+  "boycott": {
+    "pageTitle": "Israeli Products to Boycott",
+    "subtitle": "Products and Brands to Avoid",
+    "explanation": "This page lists Israeli companies and products that you may want to boycott. It also provides alternative brands and products that you can use instead.",
+    "disclaimer": "This list is informational only. The decision to boycott is a personal choice. Always verify information about companies and their affiliations from multiple sources.",
+    "searchPlaceholder": "Search products...",
+    "filterByCategory": "Filter by category",
+    "alternatives": "Alternatives",
+    "noResults": "No products found matching your search criteria.",
+    "backToHome": "Back to Main Page"
+  },
+  "categories": {
+    "all": "All Categories",
+    "food": "Food & Beverages",
+    "beverages": "Beverages",
+    "cosmetics": "Cosmetics & Beauty",
+    "pharmaceuticals": "Pharmaceuticals",
+    "technology": "Technology",
+    "tools": "Tools & Hardware",
+    "clothing": "Clothing & Fashion"
+  }
+}
