@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Location } from '@angular/common';
 import {RouterLink} from "@angular/router";
+import {emails} from "./data/emails";
 
 @Component({
   selector: 'app-letter',
@@ -16,28 +17,7 @@ export class LetterComponent {
   selectedLang = 'en';
   documentDir = 'ltr';
 
-  supermarkets = [
-    {
-      name: 'marjane',
-      type: 'email',
-      contact: ' rt [at] Marjane.ma'
-    },
-    {
-      name: 'carrefour',
-      type: 'email',
-      contact: 'Serviceclient [at] labelvie.ma'
-    },
-    {
-      name: 'aswakassalam',
-      type: 'email',
-      contact: 'service.clientele [at] aswakassalam.com'
-    },
-    {
-      name: 'bim',
-      type: 'link',
-      contact: 'https://www.bim.ma/contenu/10/formulaire-de-r%C3%A9clamation.aspx'
-    }
-  ];
+  supermarkets = emails;
 
   constructor(private translate: TranslateService, private location: Location) {
     translate.setDefaultLang('en');
