@@ -1,0 +1,64 @@
+<div class="container" [dir]="documentDir">
+  <div class="product-detail">
+    @if (product) {
+      <header>
+        <h1>{{ product.name }}</h1>
+        <span class="category-badge">{{ 'categories.' + product.category | translate }}</span>
+      </header>
+
+      <div class="product-description">
+        <p>{{ product.description }}</p>
+      </div>
+
+      <div class="images-gallery">
+        <h2>{{ 'productDetail.productImages' | translate }}</h2>
+        <div class="image-grid">
+          @if (product.logo) {
+            <div class="image-container logo-container">
+              <img [src]="getImagePath(product.logo)" [alt]="product.name + ' logo'" class="product-image"
+                   (error)="handleImageError($event)">
+              <div class="image-label">{{ product.name }} Logo</div>
+            </div>
+          }
+
+          @if (product.productImages && product.productImages.length > 0) {
+            @for (image of product.productImages; track $index) {
+              <div class="image-container">
+                <img [src]="getImagePath(image)" [alt]="product.name + ' product image ' + ($index + 1)"
+                     class="product-image" (error)="handleImageError($event)">
+              </div>
+            }
+          } @else {
+            <div class="no-images-message">
+              <p>{{ 'productDetail.noProductImages' | translate }}</p>
+            </div>
+          }
+        </div>
+      </div>
+
+      @if (product.alternativeBrands && product.alternativeBrands.length > 0) {
+        <div class="alternatives-section">
+          <h2>{{ 'boycott.alternatives' | translate }}</h2>
+          <ul class="alternatives-list">
+            @for (alt of product.alternativeBrands; track alt) {
+              <li>{{ alt }}</li>
+            }
+          </ul>
+        </div>
+      }
+
+      <div class="back-buttons">
+        <a routerLink="/israeli-products" class="back-button">
+          {{ 'productDetail.backToList' | translate }}
+        </a>
+      </div>
+    } @else {
+      <div class="not-found">
+        <h2>{{ 'productDetail.productNotFound' | translate }}</h2>
+        <a routerLink="/israeli-products" class="back-button">
+          {{ 'productDetail.backToList' | translate }}
+        </a>
+      </div>
+    }
+  </div>
+</div>

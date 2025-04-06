@@ -58,7 +58,9 @@
     "filterByCategory": "Filtrer par catégorie",
     "alternatives": "Alternatives",
     "noResults": "Aucun produit ne correspond à vos critères de recherche.",
-    "backToHome": "Retour à la Page Principale"
+    "backToHome": "Retour à la Page Principale",
+    "viewDetails": "Voir les produits"
+
   },
   "categories": {
     "all": "Toutes les Catégories",
@@ -106,6 +108,12 @@
     "title": "Soutenir les Organisations d'Aide à Gaza",
     "description": "Consultez la liste des organisations humanitaires qui travaillent pour fournir aide et secours au peuple de Gaza.",
     "viewList": "Voir les Organisations"
+  },
+  "productDetail": {
+    "productImages": "Images du produit",
+    "backToList": "Retour à la liste des produits",
+    "productNotFound": "Produit non trouvé",
+    "noProductImages": "Aucune image de produit disponible"
   }
 
 }

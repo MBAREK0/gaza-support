@@ -48,31 +48,36 @@
       @if (filteredProducts.length > 0) {
         @for (product of filteredProducts; track product.id) {
           <div class="product-card">
-            @if (product.logo) {
-              <div class="product-logo">
-                <img [src]="'../../assets/logos/products/' + product.logo" [alt]="product.name + ' logo'">
-              </div>
-            } @else {
-              <div class="product-logo no-logo">
-                <span>{{ product.name.charAt(0) }}</span>
-              </div>
-            }
-            <div class="product-info">
-              <h3>{{ product.name }}</h3>
-              <p class="category-tag">{{ 'categories.' + product.category | translate }}</p>
-              <p class="description">{{ product.description }}</p>
-
-              @if (product.alternativeBrands && product.alternativeBrands.length > 0) {
-                <div class="alternatives">
-                  <h4>{{ 'boycott.alternatives' | translate }}:</h4>
-                  <ul>
-                    @for (alt of product.alternativeBrands; track alt) {
-                      <li>{{ alt }}</li>
-                    }
-                  </ul>
+            <a [routerLink]="['/product', product.id]" class="product-link">
+              @if (product.logo) {
+                <div class="product-logo">
+                  <img [src]="'../../assets/logos/products/' + product.logo" [alt]="product.name + ' logo'">
+                </div>
+              } @else {
+                <div class="product-logo no-logo">
+                  <span>{{ product.name.charAt(0) }}</span>
                 </div>
               }
-            </div>
+              <div class="product-info">
+                <h3>{{ product.name }}</h3>
+                <p class="category-tag">{{ 'categories.' + product.category | translate }}</p>
+                <p class="description">{{ product.description }}</p>
+
+                @if (product.alternativeBrands && product.alternativeBrands.length > 0) {
+                  <div class="alternatives">
+                    <h4>{{ 'boycott.alternatives' | translate }}:</h4>
+                    <ul>
+                      @for (alt of product.alternativeBrands; track alt) {
+                        <li>{{ alt }}</li>
+                      }
+                    </ul>
+                  </div>
+                }
+                <div class="view-details">
+                  <span class="details-link">{{ 'boycott.viewDetails' | translate }}</span>
+                </div>
+              </div>
+            </a>
           </div>
         }
       } @else {

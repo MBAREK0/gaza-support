@@ -413,3 +413,40 @@ h1 {
     font-size: 0.85rem;
   }
 }
+/* Add these styles to your existing CSS */
+
+.product-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.view-details {
+  margin-top: auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.details-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.product-card:hover .details-link {
+  background-color: #c0392b;
+}
+
+/* Make sure .product-info has this to allow the view-details to push to bottom */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

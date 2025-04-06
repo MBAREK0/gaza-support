@@ -62,7 +62,8 @@
     "filterByCategory": "Filter by category",
     "alternatives": "Alternatives",
     "noResults": "No products found matching your search criteria.",
-    "backToHome": "Back to Main Page"
+    "backToHome": "Back to Main Page",
+    "viewDetails": "View Products"
   },
   "categories": {
     "all": "All Categories",
@@ -112,5 +113,11 @@
     "title": "Support Gaza Aid Organizations",
     "description": "View the list of humanitarian organizations working to provide aid and relief to the people of Gaza.",
     "viewList": "View Organizations"
+  },
+  "productDetail": {
+    "productImages": "Product Images",
+    "backToList": "Back to Products List",
+    "productNotFound": "Product Not Found",
+    "noProductImages": "No product images available"
   }
 }
