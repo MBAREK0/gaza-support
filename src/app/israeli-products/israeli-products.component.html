@@ -51,7 +51,7 @@
             <a [routerLink]="['/product', product.id]" class="product-link">
               @if (product.logo) {
                 <div class="product-logo">
-                  <img [src]="'../../assets/logos/products/' + product.logo" [alt]="product.name + ' logo'">
+                  <img [src]="getImagePath(product.logo)" [alt]="product.name + ' logo'">
                 </div>
               } @else {
                 <div class="product-logo no-logo">

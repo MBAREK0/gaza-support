@@ -1,12 +1,5 @@
-export interface Product {
-  id: number;
-  name: string;
-  category: string;
-  alternativeBrands?: string[];
-  logo?: string;
-  description?: string;
-  productImages?: string[]; // Array of image paths for product images
-}
+import {Product} from "../models/product";
+
 
 export const products: Product[] = [
   {

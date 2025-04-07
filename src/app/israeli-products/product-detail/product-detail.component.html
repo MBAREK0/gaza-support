@@ -7,7 +7,7 @@
       </header>
 
       <div class="product-description">
-        <p>{{ product.description }}</p>
+        <p>{{ product.description || '' }}</p>
       </div>
 
       <div class="images-gallery">
@@ -21,6 +21,7 @@
             </div>
           }
 
+          <!-- Use productImages property (camelCase) -->
           @if (product.productImages && product.productImages.length > 0) {
             @for (image of product.productImages; track $index) {
               <div class="image-container">

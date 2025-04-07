@@ -114,6 +114,39 @@
     "backToList": "Retour à la liste des produits",
     "productNotFound": "Produit non trouvé",
     "noProductImages": "Aucune image de produit disponible"
+  },
+  "productList": {
+    "pageTitle": "Produits",
+    "addProduct": "Ajouter un Produit",
+    "loading": "Chargement des produits...",
+    "retry": "Réessayer",
+    "noProducts": "Aucun Produit Trouvé",
+    "noProductsMsg": "Vous n'avez pas encore ajouté de produits. Cliquez sur le bouton ci-dessous pour ajouter votre premier produit.",
+    "addFirst": "Ajouter Votre Premier Produit",
+    "delete": "Supprimer",
+    "deleting": "Suppression en cours...",
+    "deleted": "Supprimé",
+    "deleteError": "Erreur",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce produit ?"
+  },
+  "productUpload": {
+    "name": "Nom du Produit",
+    "namePlaceholder": "Entrez le nom du produit",
+    "nameRequired": "Le nom du produit est requis",
+    "category": "Catégorie",
+    "selectCategory": "Sélectionnez une catégorie",
+    "categoryRequired": "La sélection d'une catégorie est requise",
+    "description": "Description",
+    "descriptionPlaceholder": "Entrez la description du produit",
+    "alternativeBrands": "Marques Alternatives",
+    "alternativeBrandsPlaceholder": "Entrez des marques similaires ou alternatives",
+    "alternativeBrandsHelper": "Séparez les marques multiples par des virgules",
+    "logo": "Logo de la Marque",
+    "productImages": "Images du Produit",
+    "productImagesHelper": "Téléchargez jusqu'à 5 images du produit",
+    "submit": "Soumettre le Produit",
+    "uploading": "Téléchargement en cours...",
+    "successMessage": "Produit téléchargé avec succès !",
+    "errorMessage": "Une erreur s'est produite lors du téléchargement. Veuillez réessayer."
   }
-
 }

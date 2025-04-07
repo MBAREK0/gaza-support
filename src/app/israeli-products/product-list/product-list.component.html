@@ -1,0 +1,85 @@
+<div class="container" [dir]="documentDir">
+  <header>
+    <h1>{{ 'productList.pageTitle' | translate }}</h1>
+    <div class="header-actions">
+      <div class="language-selector">
+        <select [(ngModel)]="selectedLang" (change)="switchLang(selectedLang)">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="ar">العربية</option>
+        </select>
+      </div>
+      <button class="add-product-btn" (click)="openUploadModal()">
+        <span class="plus-icon">+</span>
+        {{ 'productList.addProduct' | translate }}
+      </button>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <!-- Loading state -->
+    <div class="loading-container" *ngIf="isLoading">
+      <div class="loading-spinner"></div>
+      <p>{{ 'productList.loading' | translate }}</p>
+    </div>
+
+    <!-- Error state -->
+    <div class="error-container" *ngIf="error">
+      <div class="error-message">{{ error }}</div>
+      <button class="retry-btn" (click)="loadProducts()">
+        {{ 'productList.retry' | translate }}
+      </button>
+    </div>
+
+    <!-- Empty state -->
+    <div class="empty-state" *ngIf="!isLoading && !error && products.length === 0">
+      <div class="empty-icon">📦</div>
+      <h2>{{ 'productList.noProducts' | translate }}</h2>
+      <p>{{ 'productList.noProductsMsg' | translate }}</p>
+      <button class="add-product-btn" (click)="openUploadModal()">
+        {{ 'productList.addFirst' | translate }}
+      </button>
+    </div>
+
+    <!-- Products grid -->
+    <div class="products-grid" *ngIf="!isLoading && !error && products.length > 0">
+      <div class="product-card" *ngFor="let product of products">
+        <div class="product-image">
+          <img [src]="apiUrl + '/storage/' + product.logo" alt="{{ product.name }}">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">{{ product.name }}</h3>
+          <div class="product-category">{{ 'categories.' + product.category | translate }}</div>
+          <p class="product-description" *ngIf="product.description">{{ product.description }}</p>
+        </div>
+        <div class="product-actions">
+          <button class="delete-btn" [disabled]="deleteInProgress === product.id" (click)="deleteProduct(product.id)">
+            <span *ngIf="deleteInProgress !== product.id">{{ 'productList.delete' | translate }}</span>
+            <span *ngIf="deleteInProgress === product.id && deleteStatus === 'idle'">
+              {{ 'productList.deleting' | translate }}
+            </span>
+            <span *ngIf="deleteInProgress === product.id && deleteStatus === 'success'">
+              {{ 'productList.deleted' | translate }}
+            </span>
+            <span *ngIf="deleteInProgress === product.id && deleteStatus === 'error'">
+              {{ 'productList.deleteError' | translate }}
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upload Modal -->
+  <div class="modal-overlay" *ngIf="showUploadModal" (click)="closeUploadModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ 'productUpload.pageTitle' | translate }}</h2>
+        <button class="close-button" (click)="closeUploadModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <app-product></app-product>
+      </div>
+    </div>
+  </div>
+</div>

@@ -113,6 +113,39 @@
     "backToList": "العودة إلى قائمة المنتجات",
     "productNotFound": "المنتج غير موجود",
     "noProductImages": "لا تتوفر صور للمنتج"
+  },
+  "productList": {
+    "pageTitle": "المنتجات",
+    "addProduct": "إضافة منتج",
+    "loading": "جاري تحميل المنتجات...",
+    "retry": "المحاولة مرة أخرى",
+    "noProducts": "لم يتم العثور على منتجات",
+    "noProductsMsg": "لم تقم بإضافة أي منتجات حتى الآن. انقر على الزر أدناه لإضافة منتجك الأول.",
+    "addFirst": "أضف منتجك الأول",
+    "delete": "حذف",
+    "deleting": "جاري الحذف...",
+    "deleted": "تم الحذف",
+    "deleteError": "خطأ",
+    "confirmDelete": "هل أنت متأكد أنك تريد حذف هذا المنتج؟"
+  },
+  "productUpload": {
+    "name": "اسم المنتج",
+    "namePlaceholder": "أدخل اسم المنتج",
+    "nameRequired": "اسم المنتج مطلوب",
+    "category": "الفئة",
+    "selectCategory": "اختر فئة",
+    "categoryRequired": "اختيار الفئة مطلوب",
+    "description": "الوصف",
+    "descriptionPlaceholder": "أدخل وصف المنتج",
+    "alternativeBrands": "العلامات التجارية البديلة",
+    "alternativeBrandsPlaceholder": "أدخل العلامات التجارية المماثلة أو البديلة",
+    "alternativeBrandsHelper": "افصل بين العلامات التجارية المتعددة بفواصل",
+    "logo": "شعار العلامة التجارية",
+    "productImages": "صور المنتج",
+    "productImagesHelper": "قم بتحميل ما يصل إلى 5 صور للمنتج",
+    "submit": "إرسال المنتج",
+    "uploading": "جاري التحميل...",
+    "successMessage": "تم تحميل المنتج بنجاح!",
+    "errorMessage": "حدث خطأ أثناء التحميل. يرجى المحاولة مرة أخرى."
   }
-
 }
