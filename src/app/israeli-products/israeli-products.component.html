@@ -64,13 +64,13 @@
                 <p class="description">{{ product.description }}</p>
 
                 @if (product.alternativeBrands && product.alternativeBrands.length > 0) {
-                  <div class="alternatives">
+                  <div class="alternatives-container">
                     <h4>{{ 'boycott.alternatives' | translate }}:</h4>
-                    <ul>
+                    <div class="alternatives-grid">
                       @for (alt of product.alternativeBrands; track alt) {
-                        <li>{{ alt }}</li>
+                        <span class="alternative-tag">{{ alt }}</span>
                       }
-                    </ul>
+                    </div>
                   </div>
                 }
                 <div class="view-details">
