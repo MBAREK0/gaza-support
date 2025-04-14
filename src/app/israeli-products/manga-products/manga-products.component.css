@@ -308,3 +308,29 @@ h1 {
     width: 100%;
   }
 }
+
+
+.manga-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: scale(1.05); /* Slightly scaled up by default */
+  transition: transform 0.5s ease;
+  animation: subtle-zoom 5s infinite alternate ease-in-out;
+}
+
+/* Create a subtle continuous zoom animation */
+@keyframes subtle-zoom {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+/* Remove or modify the hover effect if you don't want it anymore */
+.manga-item:hover .manga-image img {
+  /* You can remove this rule completely or modify it */
+  transform: scale(1.12); /* A stronger zoom on hover */
+}
