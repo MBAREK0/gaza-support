@@ -13,7 +13,7 @@ import { societies } from './data/societies';
   styleUrl: './societies.component.css'
 })
 export class SocietiesComponent {
-  selectedLang = 'en';
+  selectedLang = 'ar';
   documentDir = 'ltr';
   supportSocieties = societies;
 

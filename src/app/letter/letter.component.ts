@@ -14,7 +14,7 @@ import {emails} from "./data/emails";
   styleUrl: './letter.component.css'
 })
 export class LetterComponent {
-  selectedLang = 'en';
+  selectedLang = 'ar';
   documentDir = 'ltr';
 
   // Track which buttons have been clicked for copying

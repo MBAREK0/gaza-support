@@ -15,7 +15,7 @@ import {HadithComponent} from "../../hadith/hadith.component";
   styleUrl: './manga-products.component.css'
 })
 export class MangaProductsComponent implements OnInit {
-  selectedLang = 'en';
+  selectedLang = 'ar';
   documentDir = 'ltr';
 
   searchTerm = '';
