@@ -5,11 +5,6 @@ export const emails =  [
     contact: ' rt@Marjane.ma'
   },
   {
-    name: 'Carrefour',
-    type: 'email',
-    contact: 'Serviceclient@labelvie.ma'
-  },
-  {
     name: 'Aswak Assalam',
     type: 'email',
     contact: 'service.clientele@aswakassalam.com'

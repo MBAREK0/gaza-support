@@ -73,7 +73,8 @@
     "pharmaceuticals": "Pharmaceuticals",
     "technology": "Technology",
     "tools": "Tools & Hardware",
-    "clothing": "Clothing & Fashion"
+    "clothing": "Clothing & Fashion",
+    "entertainment": "Entertainment & Media"
   },
 
   "societies": {
@@ -153,5 +154,16 @@
     "uploading": "Uploading...",
     "successMessage": "Product successfully uploaded!",
     "errorMessage": "An error occurred during upload. Please try again."
+  },
+  "manga": {
+    "pageTitle": "Boycott Products Guide",
+    "subtitle": "Visual Products Guide",
+    "explanation": "This guide provides a visual reference of products organized by category. Use the search and filter options to find specific items.",
+    "searchPlaceholder": "Search products or categories...",
+    "filterByCategory": "Filter by category",
+    "allCategories": "All Categories",
+    "loading": "Loading products...",
+    "noResults": "No products found matching your search criteria.",
+    "backToHome": "Back to Home"
   }
 }

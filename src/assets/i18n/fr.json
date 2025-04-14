@@ -70,7 +70,8 @@
     "pharmaceuticals": "Produits Pharmaceutiques",
     "technology": "Technologie",
     "tools": "Outils & Quincaillerie",
-    "clothing": "Vêtements & Mode"
+    "clothing": "Vêtements & Mode",
+    "entertainment": "Divertissement et Médias"
   },
   "societies": {
     "title": "Soutenir Gaza - Organisations d'Aide",
@@ -148,5 +149,17 @@
     "uploading": "Téléchargement en cours...",
     "successMessage": "Produit téléchargé avec succès !",
     "errorMessage": "Une erreur s'est produite lors du téléchargement. Veuillez réessayer."
+  },
+  "manga": {
+    "pageTitle": "Guide de Boycott des Produits",
+    "subtitle": "Guide Visuel des Produits",
+    "explanation": "Ce guide fournit une référence visuelle des produits organisés par catégorie. Utilisez les options de recherche et de filtrage pour trouver des articles spécifiques.",
+    "searchPlaceholder": "Rechercher produits ou catégories...",
+    "filterByCategory": "Filtrer par catégorie",
+    "allCategories": "Toutes les Catégories",
+    "loading": "Chargement des produits...",
+    "noResults": "Aucun produit trouvé correspondant à vos critères de recherche.",
+    "backToHome": "Retour à l'Accueil"
   }
+
 }

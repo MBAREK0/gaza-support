@@ -1,0 +1,26 @@
+<div class="container" dir="rtl">
+  <div class="title-container">
+    <div class="title">
+      {{title}}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="content">
+      {{hadithText.substring(0, hadithText.indexOf('أنْفَقَهُ'))}}
+      <span class="highlight">أنْفَقَهُ</span>
+      {{hadithText.substring(hadithText.indexOf('أنْفَقَهُ') + 'أنْفَقَهُ'.length)}}
+    </div>
+
+    <div class="narrator">{{narrator}}</div>
+
+    <div class="footer">
+      {{footer}}
+      <div class="arrow">↓</div>
+    </div>
+  </div>
+
+  <div class="hashtag">
+    {{hashtag}}
+  </div>
+</div>

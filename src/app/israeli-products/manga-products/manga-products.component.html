@@ -1,0 +1,86 @@
+<div class="container" [dir]="documentDir">
+  <header>
+    <h1>{{ 'boycott.pageTitle' | translate }}</h1>
+    <div class="language-selector">
+      <select [(ngModel)]="selectedLang" (change)="switchLang(selectedLang)">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="intro">
+      <h2>{{ 'boycott.subtitle' | translate }}</h2>
+      <p>{{ 'boycott.explanation' | translate }}</p>
+      <div class="disclaimer">
+        <p>{{ 'boycott.disclaimer' | translate }}</p>
+      </div>
+    </div>
+
+
+    <app-hadith></app-hadith>
+
+    <div class="filters">
+      <div class="search-box">
+        <input
+          type="text"
+          [(ngModel)]="searchTerm"
+          (input)="filterProducts()"
+          placeholder="{{ 'boycott.searchPlaceholder' | translate }}"
+        >
+      </div>
+      <div class="category-filter">
+        <label for="category-select">{{ 'boycott.filterByCategory' | translate }}:</label>
+        <select
+          id="category-select"
+          [(ngModel)]="selectedCategory"
+          (change)="filterProducts()"
+        >
+          @for (category of categories; track category) {
+            <option [value]="category">
+              {{ 'categories.' + category | translate }}
+            </option>
+          }
+        </select>
+      </div>
+    </div>
+
+    @if (isLoading) {
+      <div class="loading">
+        <p>{{ 'manga.loading' | translate }}</p>
+      </div>
+    } @else if (filteredProducts.length === 0) {
+      <div class="no-results">
+        <p>{{ 'manga.noResults' | translate }}</p>
+      </div>
+    } @else {
+      <!-- Display manga products by category -->
+      @for (category of Array.from(groupedProducts.keys()); track category) {
+        <div class="category-section">
+          <h2 class="category-title">{{ 'categories.' + category | translate }}</h2>
+
+          <div class="manga-grid">
+            @for (product of groupedProducts.get(category); track product.image) {
+              <div class="manga-item">
+                <a [routerLink]="['/manga', product.image]" class="manga-link">
+                  <div class="manga-image">
+                    <img [src]="getImagePath(product.image)" [alt]="product.category">
+                  </div>
+                  <div class="manga-info">
+                    <h3>{{ 'categories.' + product.category | translate }}</h3>
+                  </div>
+                </a>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    }
+
+    <div class="back-link">
+      <a routerLink="/">{{ 'manga.backToHome' | translate }}</a>
+    </div>
+  </div>
+</div>
