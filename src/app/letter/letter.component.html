@@ -39,8 +39,11 @@
       <p class="note">{{ 'emails.note' | translate }}</p>
 
       <div class="copy-all-emails">
-        <button class="copy-all-btn" (click)="copyAllEmails()">
-          {{ 'emails.copyAll' | translate }}
+        <button
+          class="copy-all-btn"
+          [ngClass]="{'copied': allEmailsCopied}"
+          (click)="copyAllEmails()">
+          {{ allEmailsCopied ? ('emails.copied' | translate) : ('emails.copyAll' | translate) }}
         </button>
         <p class="copy-tip">{{ 'emails.copyAllTip' | translate }}</p>
       </div>
@@ -51,8 +54,11 @@
             <div class="market-name">
               <strong>{{ market.name | translate }}</strong>
               @if (market.type !== 'link') {
-                <button class="copy-btn" (click)="copyText(market.contact)">
-                  {{ 'copy' | translate }}
+                <button
+                  class="copy-btn"
+                  [ngClass]="{'copied': copiedButtonIds[market.name]}"
+                  (click)="copyText(market.contact, market.name)">
+                  {{ copiedButtonIds[market.name] ? ('copied' | translate) : ('copy' | translate) }}
                 </button>
               }
             </div>
@@ -62,8 +68,8 @@
               </a>
             } @else {
               <span>
-                {{ market.contact | translate }}
-              </span>
+          {{ market.contact | translate }}
+        </span>
             }
           </div>
         }
@@ -88,9 +94,13 @@
         <p>{{ 'letter.paragraph12' | translate }}</p>
         <p>{{ 'letter.closing' | translate }}</p>
       </div>
-      <button class="copy-letter-btn" (click)="copyLetterTemplate()">
-        {{ 'letter.copyButton' | translate }}
+      <button
+        class="copy-letter-btn"
+        [ngClass]="{'copied': letterCopied}"
+        (click)="copyLetterTemplate()">
+        {{ letterCopied ? ('letter.copied' | translate) : ('letter.copyButton' | translate) }}
       </button>
+
     </div>
 
     <div class="share-section">

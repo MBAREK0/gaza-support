@@ -16,7 +16,8 @@
     "from_here" : "from here",
     "copyAll": "Copy All Emails",
     "copyAllTip": "Click to copy all email addresses for pasting into Gmail",
-    "all_copied": "All email addresses copied to clipboard!"
+    "all_copied": "All email addresses copied to clipboard!",
+    "copied": "Email address copied to clipboard!"
   },
 
 

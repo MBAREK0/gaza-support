@@ -17,6 +17,11 @@ export class LetterComponent {
   selectedLang = 'en';
   documentDir = 'ltr';
 
+  // Track which buttons have been clicked for copying
+  copiedButtonIds: {[key: string]: boolean} = {};
+  letterCopied = false;
+  allEmailsCopied = false;
+
   supermarkets = emails;
 
   constructor(private translate: TranslateService, private location: Location) {
@@ -28,6 +33,11 @@ export class LetterComponent {
   switchLang(lang: string) {
     this.translate.use(lang);
     this.updateDirection(lang);
+
+    // Reset all copied states when language is changed
+    this.copiedButtonIds = {};
+    this.letterCopied = false;
+    this.allEmailsCopied = false;
   }
 
   updateDirection(lang: string) {
@@ -43,10 +53,16 @@ export class LetterComponent {
     }
   }
 
-  copyText(text: string) {
+  copyText(text: string, id: string) {
     navigator.clipboard.writeText(text)
       .then(() => {
-        alert(this.translate.instant('copied'));
+        // Set this specific button as copied
+        this.copiedButtonIds[id] = true;
+
+        // Reset button state after 2 seconds
+        setTimeout(() => {
+          this.copiedButtonIds[id] = false;
+        }, 2000);
       })
       .catch(err => {
         console.error('Could not copy text: ', err);
@@ -72,7 +88,12 @@ export class LetterComponent {
 
     navigator.clipboard.writeText(letter)
       .then(() => {
-        alert(this.translate.instant('letter.copied'));
+        this.letterCopied = true;
+
+        // Reset button state after 2 seconds
+        setTimeout(() => {
+          this.letterCopied = false;
+        }, 2000);
       })
       .catch(err => {
         console.error('Could not copy letter: ', err);
@@ -102,6 +123,7 @@ export class LetterComponent {
         return '#';
     }
   }
+
   copyAllEmails() {
     // Filter out only items with email addresses (not links)
     const emailContacts = this.supermarkets
@@ -111,7 +133,12 @@ export class LetterComponent {
 
     navigator.clipboard.writeText(emailContacts)
       .then(() => {
-        alert(this.translate.instant('emails.all_copied'));
+        this.allEmailsCopied = true;
+
+        // Reset button state after 2 seconds
+        setTimeout(() => {
+          this.allEmailsCopied = false;
+        }, 2000);
       })
       .catch(err => {
         console.error('Could not copy emails: ', err);

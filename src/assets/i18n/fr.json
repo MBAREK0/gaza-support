@@ -16,7 +16,8 @@
     "from_here": "à partir d'ici",
     "copyAll": "Copier tous les e-mails",
     "copyAllTip": "Cliquez pour copier toutes les adresses e-mail à coller dans Gmail",
-    "all_copied": "Toutes les adresses e-mail ont été copiées dans le presse-papiers !"
+    "all_copied": "Toutes les adresses e-mail ont été copiées dans le presse-papiers !",
+    "copied": "Les adresses e-mail ont été copiées dans le presse-papiers !"
   },
 
   "letter": {

@@ -359,3 +359,19 @@ h1, h2, h3 {
     padding: 10px;
   }
 }
+
+/* Styles for the "copied" state of buttons */
+.copy-btn.copied {
+  background-color: #8e44ad; /* Purple color when copied */
+  transition: background-color 0.3s ease;
+}
+
+.copy-letter-btn.copied {
+  background-color: #8e44ad; /* Purple color when copied */
+  transition: background-color 0.3s ease;
+}
+
+.copy-all-btn.copied {
+  background-color: #8e44ad; /* Purple color when copied */
+  transition: background-color 0.3s ease;
+}
