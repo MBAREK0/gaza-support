@@ -64,14 +64,14 @@
           <div class="manga-grid">
             @for (product of groupedProducts.get(category); track product.image) {
               <div class="manga-item">
-                <a [routerLink]="['/manga', product.image]" class="manga-link">
+                <div  class="manga-link">
                   <div class="manga-image">
                     <img [src]="getImagePath(product.image)" [alt]="product.category">
                   </div>
                   <div class="manga-info">
                     <h3>{{ 'categories.' + product.category | translate }}</h3>
                   </div>
-                </a>
+                </div>
               </div>
             }
           </div>
