@@ -310,16 +310,17 @@ h1 {
 }
 
 
+/* Base styling for images with transform effect */
 .manga-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  transform: scale(1.05); /* Slightly scaled up by default */
+  transform: scale(1.05); /* Default slight scale */
   transition: transform 0.5s ease;
   animation: subtle-zoom 5s infinite alternate ease-in-out;
 }
 
-/* Create a subtle continuous zoom animation */
+/* Creating the subtle zoom animation */
 @keyframes subtle-zoom {
   from {
     transform: scale(1.02);
@@ -329,8 +330,39 @@ h1 {
   }
 }
 
-/* Remove or modify the hover effect if you don't want it anymore */
-.manga-item:hover .manga-image img {
-  /* You can remove this rule completely or modify it */
-  transform: scale(1.12); /* A stronger zoom on hover */
+/* Responsive adjustments for tablets */
+@media (max-width: 1024px) {
+  .manga-image img {
+    animation: subtle-zoom-tablet 5s infinite alternate ease-in-out;
+  }
+
+  @keyframes subtle-zoom-tablet {
+    from {
+      transform: scale(1.01);
+    }
+    to {
+      transform: scale(1.06);
+    }
+  }
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 600px) {
+  .manga-image img {
+    animation: subtle-zoom-mobile 5s infinite alternate ease-in-out;
+  }
+
+  @keyframes subtle-zoom-mobile {
+    from {
+      transform: scale(1.01);
+    }
+    to {
+      transform: scale(1.04);
+    }
+  }
+
+  /* Reduce transition time for smoother performance on mobile */
+  .manga-image img {
+    transition: transform 0.3s ease;
+  }
 }
