@@ -319,7 +319,7 @@ h1, h2, h3 {
 }
 .copy-all-emails {
   margin-bottom: 15px;
-  text-align: right;
+  text-align: left;
 }
 
 .copy-all-btn {
@@ -344,7 +344,7 @@ h1, h2, h3 {
 
 /* RTL support for copy all button container */
 :host-context([dir="rtl"]) .copy-all-emails {
-  text-align: left;
+  text-align: right;
 }
 
 /* Mobile responsiveness for the copy all button */
