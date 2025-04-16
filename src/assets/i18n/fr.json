@@ -3,12 +3,14 @@
   "copy": "Copier",
   "copied": "Copié dans le presse-papiers !",
 
+
   "action": {
     "title": "Écrivez aux supermarchés pour leur demander de ne plus stocker de produits israéliens",
-    "description": "Boycotter les produits israéliens est un moyen important par lequel les individus peuvent exprimer leur soutien à la Palestine et leur opposition à l'apartheid israélien contre les Palestiniens. Ce qui est encore plus fort, c'est quand les gens agissent collectivement et poussent pour retirer les produits israéliens des rayons des magasins au Maroc jusqu'à ce qu'Israël mette fin à son occupation de la Palestine.",
-    "motivation": "En tant que citoyens engagés en faveur des droits humains et du droit international, nous estimons que les détaillants ont l’opportunité de se placer du bon côté de l’histoire en s’opposant à l’apartheid, en cessant de stocker des produits israéliens tant qu’Israël n’aura pas mis fin à son occupation des territoires palestiniens, stoppé ses violations des droits humains et ses crimes de guerre, garanti une égalité pleine et entière aux Palestiniens dans les territoires occupés, et respecté intégralement ses obligations en vertu du droit international.",
+    "description": "Boycotter les produits israéliens est un acte fort de soutien à la Palestine. Agir collectivement pour les retirer des rayons des magasins marocains peut faire pression jusqu’à la fin de l’occupation.",
+    "motivation": "Les commerçants ont l’opportunité de se placer du bon côté de l’histoire en cessant de vendre des produits israéliens tant que les crimes contre les Palestiniens continuent.",
     "sample": "Vous trouverez ci-dessous un exemple de lettre que nous vous demandons d'envoyer à la fois à vos supermarchés locaux lorsque vous voyez des produits israéliens, et aux sièges sociaux des principaux supermarchés marocains (même s'il est toujours préférable d'écrire avec vos propres mots)."
-  },
+  }
+
 
   "emails": {
     "emails.title": "Voici les e-mails de ces supermarchés - Vous pouvez utiliser le bouton 'Copier tous les e-mails' pour saisir tous les e-mails à la fois.",
