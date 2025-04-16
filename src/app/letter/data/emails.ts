@@ -10,6 +10,11 @@ export const emails =  [
     contact: 'service.clientele@aswakassalam.com'
   },
   {
+    name: 'u express',
+    type: 'email',
+    contact: 'serviceclient@uexpress.ma'
+  },
+  {
     name: 'Bim',
     type: 'link',
     contact: 'https://www.bim.ma/contenu/10/formulaire-de-r%C3%A9clamation.aspx'
